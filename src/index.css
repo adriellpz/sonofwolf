@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://use.typekit.net/ext6umx.css");
+@import "~antd/dist/antd.css";
+.App {
+  text-align: center;
+  background-color: #393955;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body > #root > div {
+  height: 100vh;
+}
+
+.App-logo {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ant-layout-header {
+  height: 15vh;
+}
+.ant-layout-content {
+  height: 70vh;
+}
+
+.ant-layout-footer {
+  height: 15vh;
+}
+.cmessage {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 82vh;
+  max-width: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: nelson-rugged, sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  margin: 3rem 3rem 3rem 3rem;
+}
+/* .App-header {
+  background-color: #393955;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
 }

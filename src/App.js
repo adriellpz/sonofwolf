@@ -1,21 +1,29 @@
-import React from 'react';
-import logo from './logo.png';
-/* import cmessage from './cmessage.png' */
-import './App.css';
+import React, { Component } from "react";
+import Home from "./components/home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import notfound from "./components/notfound";
+import About from "./components/about";
+import photography from "./components/photography";
+import gallery from "./components/gallery";
+import contact from "./components/contact";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* <img src={cmessage} className="cmessage" alt="cmessage" /> */}
-        <h1>
-          adriel@sonofwolf.com
-        </h1>
-
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/photography" component={photography} />
+            <Route exact path="/About" component={About} />
+            <Route exact path="/gallery" component={gallery} />
+            <Route exact path="/contact" component={contact} />
+            <Route exact path="*" component={notfound} />
+          </Switch>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;
