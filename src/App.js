@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         {/* <img src={cmessage} className="cmessage" alt="cmessage" /> */}
         <h1>
-          adriel@sonofwolf.com
+          admin@sonofwolf.com 
         </h1>
 
       </header>
